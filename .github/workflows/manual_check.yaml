@@ -1,0 +1,12 @@
+on: [workflow_dispatch]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Manual quick check
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ./
+      with:
+        aws-security-group-ids: ${{ secrets.AWS_DEV_TOOLS_SECURITY_GROUP_ID }}
+        port-range: '443'
