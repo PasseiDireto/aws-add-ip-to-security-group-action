@@ -37,5 +37,5 @@ jobs:
         with:
           push: true
           tags: |
-            passeidireto/trigger-external-workflow-action:latest
-            passeidireto/trigger-external-workflow-action:${{ env.TAG }}
+            passeidireto/aws-add-ip-to-security-group-action:latest
+            passeidireto/aws-add-ip-to-security-group-action:${{ env.TAG }}
