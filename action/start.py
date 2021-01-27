@@ -5,8 +5,8 @@ import os
 
 import boto3
 
-from .ipconfig import get_ip_config
-from .logger import logging
+from action.ipconfig import get_ip_config
+from action.logger import logging
 
 logger = logging.getLogger("create-ingress-rule")
 
