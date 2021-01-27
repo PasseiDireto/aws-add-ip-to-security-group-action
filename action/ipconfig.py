@@ -9,7 +9,6 @@ import urllib.request
 
 def get_ip_config() -> list:
     env = os.environ
-    print(env)
     port_range = env.get("INPUT_PORT_RANGE", "443").split("-")
     external_ip = (
         urllib.request.urlopen("http://checkip.amazonaws.com/")  # nosec

@@ -13,5 +13,5 @@ inputs:
     default: 'GitHub Action'
 runs:
   using: 'docker'
-  image: 'Dockerfile' # 'docker://passeidireto/aws-add-ip-to-security-group-action'
+  image: 'docker://passeidireto/aws-add-ip-to-security-group-action'
   post-entrypoint: '/action_workspace/cleanup.sh'
