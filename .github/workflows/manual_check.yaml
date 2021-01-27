@@ -15,5 +15,5 @@ jobs:
         role-duration-seconds: 900
     - uses: ./
       with:
-        aws-security-group-ids: ${{ secrets.AWS_DEV_TOOLS_SECURITY_GROUP_ID }}
-        port-range: '443'
+        aws_security_group_ids: ${{ secrets.AWS_DEV_TOOLS_SECURITY_GROUP_ID }}
+        port_range: '443'

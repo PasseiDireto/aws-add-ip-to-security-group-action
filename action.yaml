@@ -1,13 +1,12 @@
 name: 'Add a IP rule to a AWS Security Group'
 description: 'Add a TCP Ingress rule to a AWS Security Group and cleans up after the workflow is done.'
 inputs:
-  aws-security-group-ids:
+  aws_security_group_ids:
     description: 'comma separated list of AWS Security Group IDs'
     required: true
-  port-range:
+  port_range:
     description: 'Port range'
-    required: false
-    default: '443'
+    required: true
   description:
     description: 'The description of your IP rule'
     required: false
