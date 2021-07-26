@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aws-add-ip-to-security-group-action
+  description: GitHub Action to add inbound rules to AWS Security Groups allowing a given IP to access TCP ports.
+  labels:
+    system: github-actions
+  annotations:
+    github.com/project-slug: PasseiDireto/aws-add-ip-to-security-group-action
+    backstage.io/github-actions-id: PasseiDireto/aws-add-ip-to-security-group-action
+    backstage.io/techdocs-ref: github:https://github.com/PasseiDireto/aws-add-ip-to-security-group-action
+  tags:
+    - python
+    - action
+spec:
+  type: library
+  lifecycle: production
